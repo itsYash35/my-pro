@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO - Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: black;
+        }
+        
+        .header-nav {
+            border-bottom: 1px solid #333;
+        }
+        .service-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(255, 0, 0, 0.3);
+        }
+        .icon-bg {
+            background-color: rgba(255, 0, 0, 0.1);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body class="bg-custom text-white font-sans relative">
+
+    <!-- Header Navigation -->
+    <header class="flex justify-between items-center p-6 header-nav">
+        <h1 class="text-2xl font-bold">YASH</h1>
+        <nav>
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="hover:text-red-600">Home</a></li>
+                <li><a href="index2.html" class="text-red-600">Services</a></li>
+                <li><a href="#" class="hover:text-red-600">Skills</a></li>
+                <li><a href="#" class="hover:text-red-600">Education</a></li>
+                <li><a href="#" class="hover:text-red-600">Experience</a></li>
+                <li><a href="#" class="hover:text-red-600">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-20 px-4 md:px-20">
+        <div class="text-center">
+            <h2 class="text-5xl font-bold mb-8">My <span class="text-red-600">Services</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-12">I offer a wide range of services that cater to your needs. From script writing to creative content development, I am here to bring your ideas to life.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="icon-bg">
+                    <img src="coding.png" alt="Script Writing Icon" class="w-10 h-10">
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+                <p class="text-gray-400">Building tailored websites that are fast, secure, and optimized for user experience, using the latest web technologies.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="icon-bg">
+                    <img src="development.png" alt="Content Creation Icon" class="w-10 h-10">
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Software Testing & QA</h3>
+                <p class="text-gray-400">Ensuring the highest quality of software through rigorous testing and quality assurance processes.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="icon-bg">
+                    <img src="coding (1).png" alt="Storyboarding Icon" class="w-10 h-10">
+                </div>
+                <h3 class="text-2xl font-bold mb-4">E-commerce Development</h3>
+                <p class="text-gray-400">Visualizing your ideas through detailed storyboards that bring your concepts to life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional Footer -->
+    <footer class="text-center py-8 text-gray-400">
+        <p>&copy; 2024 Yash - All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
